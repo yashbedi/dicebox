@@ -13,6 +13,7 @@
 		D3680336204479FF004B32F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3680334204479FF004B32F9 /* Main.storyboard */; };
 		D3680338204479FF004B32F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3680337204479FF004B32F9 /* Assets.xcassets */; };
 		D368033B204479FF004B32F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3680339204479FF004B32F9 /* LaunchScreen.storyboard */; };
+		D374A40D2044F46800F10859 /* testing....swift in Sources */ = {isa = PBXBuildFile; fileRef = D374A40C2044F46800F10859 /* testing....swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D3680337204479FF004B32F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D368033A204479FF004B32F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D368033C204479FF004B32F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D374A40C2044F46800F10859 /* testing....swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testing....swift; sourceTree = "<group>"; };
 		EEBBAE1214528DBFD893C395 /* Pods-DiceBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiceBox/Pods-DiceBox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				D3680337204479FF004B32F9 /* Assets.xcassets */,
 				D3680339204479FF004B32F9 /* LaunchScreen.storyboard */,
 				D368033C204479FF004B32F9 /* Info.plist */,
+				D374A40C2044F46800F10859 /* testing....swift */,
 			);
 			path = DiceBox;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3680333204479FF004B32F9 /* ViewController.swift in Sources */,
+				D374A40D2044F46800F10859 /* testing....swift in Sources */,
 				D3680331204479FF004B32F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +388,7 @@
 				D3680341204479FF004B32F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
