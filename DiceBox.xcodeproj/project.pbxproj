@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52B97ACCA5E52D7DC1B295D0 /* Pods_DiceBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957B11C32E7E72D66C5FBD72 /* Pods_DiceBox.framework */; };
 		D3680331204479FF004B32F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3680330204479FF004B32F9 /* AppDelegate.swift */; };
 		D3680333204479FF004B32F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3680332204479FF004B32F9 /* ViewController.swift */; };
 		D3680336204479FF004B32F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3680334204479FF004B32F9 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		957B11C32E7E72D66C5FBD72 /* Pods_DiceBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiceBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5531EB7A5C9D6E215CD5F2 /* Pods-DiceBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiceBox/Pods-DiceBox.release.xcconfig"; sourceTree = "<group>"; };
 		D368032D204479FF004B32F9 /* DiceBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3680330204479FF004B32F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3680332204479FF004B32F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D3680337204479FF004B32F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D368033A204479FF004B32F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D368033C204479FF004B32F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBBAE1214528DBFD893C395 /* Pods-DiceBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiceBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiceBox/Pods-DiceBox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B97ACCA5E52D7DC1B295D0 /* Pods_DiceBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4BB607E8E1708D47A315A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEBBAE1214528DBFD893C395 /* Pods-DiceBox.debug.xcconfig */,
+				CB5531EB7A5C9D6E215CD5F2 /* Pods-DiceBox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		176DD4ACBF828E87EBE1936E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				957B11C32E7E72D66C5FBD72 /* Pods_DiceBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3680324204479FF004B32F9 = {
 			isa = PBXGroup;
 			children = (
 				D368032F204479FF004B32F9 /* DiceBox */,
 				D368032E204479FF004B32F9 /* Products */,
+				0A4BB607E8E1708D47A315A4 /* Pods */,
+				176DD4ACBF828E87EBE1936E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D368033F204479FF004B32F9 /* Build configuration list for PBXNativeTarget "DiceBox" */;
 			buildPhases = (
+				4A8341F6B561DEFD69561E2A /* [CP] Check Pods Manifest.lock */,
 				D3680329204479FF004B32F9 /* Sources */,
 				D368032A204479FF004B32F9 /* Frameworks */,
 				D368032B204479FF004B32F9 /* Resources */,
+				7335B87D2C4686E894E772B3 /* [CP] Embed Pods Frameworks */,
+				FE20B415F493D8E4E809D48A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A8341F6B561DEFD69561E2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiceBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7335B87D2C4686E894E772B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DiceBox/Pods-DiceBox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiceBox/Pods-DiceBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE20B415F493D8E4E809D48A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiceBox/Pods-DiceBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3680329204479FF004B32F9 /* Sources */ = {
@@ -258,6 +339,7 @@
 		};
 		D3680340204479FF004B32F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEBBAE1214528DBFD893C395 /* Pods-DiceBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DiceBox/Info.plist;
@@ -271,6 +353,7 @@
 		};
 		D3680341204479FF004B32F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5531EB7A5C9D6E215CD5F2 /* Pods-DiceBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DiceBox/Info.plist;
